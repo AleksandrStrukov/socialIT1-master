@@ -6,11 +6,21 @@ export const Navbar = () => {
   return (
     <div>
       <nav className={classes.nav}>
-        <div className="item"><NavLink to="/profile">Profile</NavLink></div>
-        <div className="item"><NavLink to="/dialogs">Messages</NavLink></div>
-        <div className="item"><NavLink to="/news">News</NavLink></div>
-        <div className="item"><NavLink to="/music">Music</NavLink></div>
-        <div className="item"><NavLink to="/settings">Settings</NavLink></div>
+        <div className={classes.item}><NavLink to="/profile"
+                                               className={({isActive}) => (isActive ? classes.active : classes.item)}>Profile</NavLink>
+        </div>
+        <div className={classes.item}><NavLink to="/dialogs"
+                                               className={({isActive}) => (isActive ? classes.active : classes.item)}>Messages</NavLink>
+        </div>
+        <div className={classes.item}><NavLink to="/news"
+                                               className={({isActive}) => (isActive ? classes.active : classes.item)}>News</NavLink>
+        </div>
+        <div className={classes.item}><NavLink to="/music"
+                                               className={({isActive}) => (isActive ? classes.active : classes.item)}>Music</NavLink>
+        </div>
+        <div className={classes.item}><NavLink to="/settings"
+                                               className={({isActive}) => (isActive ? classes.active : classes.item)}>Settings</NavLink>
+        </div>
       </nav>
     </div>
   );
