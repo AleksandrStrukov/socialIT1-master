@@ -6,9 +6,10 @@ import {NavLink} from 'react-router-dom';
 export const ProfileComponent = () => {
   return (
     <div className={classes.content}>
-      <div className="content"><NavLink to='/profile'>Main Content</NavLink></div>
+      <div className="content"></div>
       <img src="https://media.collegetimes.com/uploads/2016/10/24200002/perfect.jpg" />
       <MyPosts />
     </div>
   );
 };
+// <NavLink to='/profile'>Main Content</NavLink>
