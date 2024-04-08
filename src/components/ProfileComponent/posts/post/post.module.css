@@ -1,0 +1,8 @@
+.item {
+    color: coral;
+}
+.item img {
+    border-radius: 20px;
+    background-color: slateblue;
+    width: 60px;
+}

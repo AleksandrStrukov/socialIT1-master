@@ -1,0 +1,10 @@
+.nav {
+    grid-area: nav;
+    background-color: coral;
+    color: darkorchid;
+    width: 140px;
+    border: 3px solid blue;
+    border-radius: 20px;
+    padding: 15px;
+    font-size: 20px;
+}
