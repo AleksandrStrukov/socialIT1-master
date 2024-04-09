@@ -1,10 +1,14 @@
+import sd from './MyPosts.module.css'
 import {Post} from './post/post';
 
 export const MyPosts = () => {
   return (
-    <div>
-      MyPosts
-      <textarea />
+    <div className={sd.posts}>
+      <h2>MyPosts</h2>
+      <div>
+        <textarea></textarea>
+      </div>
+
       <button>NewPost</button>
       <Post
         message=" I am fine!"

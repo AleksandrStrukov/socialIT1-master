@@ -1,0 +1,18 @@
+.posts {
+  /*padding: 30px 30px 30px 30px*/
+}
+.posts button {
+  border-radius: 10px;
+  color: red;
+  width: 100px;
+  height: 50px;
+  background-color: chartreuse;
+  margin:10px
+}
+.posts textarea {
+  margin: 10px;
+  width: 500px;
+  height: 50px;
+  border-radius: 15px;
+  padding: 10px
+}
