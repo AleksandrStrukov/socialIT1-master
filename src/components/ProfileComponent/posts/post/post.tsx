@@ -1,7 +1,8 @@
-import s from './post.module.css'
+import s from './post.module.css';
 type props = {
   message: string;
   image: string;
+  id: string;
 };
 export const Post = (props: props) => {
   return (

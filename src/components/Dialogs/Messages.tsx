@@ -1,14 +1,17 @@
 import React from 'react';
 
 type Message = {
-  message: string
-  image: string
-}
+  message: string;
+  image: string;
+  id: string;
+};
 export const Message = (props: Message) => {
-  return <div>
+  return (
     <div>
-      <img src={props.image} />
-      {props.message}
+      <div>
+        <img src={props.image} />
+        {props.message}
+      </div>
     </div>
-  </div>
-}
+  );
+};
