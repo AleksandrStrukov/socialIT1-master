@@ -7,18 +7,18 @@ import {Route, Routes} from 'react-router-dom';
 import {Dialogs} from './components/Dialogs/Dialogs';
 import {News} from './components/News/News';
 import {Music} from './components/Music/Music';
+import {posts} from './index';
 
-function App() {
+function App(props: posts[]) {
   return (
     <div className="wrapper">
-      <Header/>
+      <Header />
       <Navbar />
       <Routes>
-        <Route path='/dialogs' element={<Dialogs/>} />
-        <Route path='/profile' element={<ProfileComponent/>} />
-        <Route path='/news' element={<News/>} />
-        <Route path='/music' element={<Music/>} />
-
+        <Route path="/dialogs" element={<Dialogs />} />
+        <Route path="/profile" element={<ProfileComponent {...props} />} />
+        <Route path="/news" element={<News />} />
+        <Route path="/music" element={<Music />} />
       </Routes>
     </div>
   );

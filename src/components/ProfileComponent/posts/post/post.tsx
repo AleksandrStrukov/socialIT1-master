@@ -1,16 +1,15 @@
 import s from './post.module.css';
-type props = {
-  message: string;
-  image: string;
-  id: string;
-};
-export const Post = (props: props) => {
+import {posts} from '../../../../index';
+
+export const Post = (props: posts[]) => {
   return (
     <div>
-      <div className={s.item}>
-        <img src={props.image} />
-        {props.message}
-      </div>
+      {props.map(post => (
+        <div className={s.item}>
+          <img src={post.image} />
+          {post.message}
+        </div>
+      ))}
     </div>
   );
 };
