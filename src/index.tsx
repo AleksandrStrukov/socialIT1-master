@@ -4,37 +4,13 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import {BrowserRouter} from 'react-router-dom';
-
-export type posts = {
-  message: string;
-  image: string;
-  id: string;
-};
-
-let posstsData: posts[] = [
-  {
-    message: 'I am fine!',
-    image: 'https://www.freepnglogos.com/uploads/minions-png/minions-png-shy-minion-transparent-png-stickpng-31.png',
-    id: '1',
-  },
-  {
-    message: 'I am Web developer!',
-    image: 'https://www.freepnglogos.com/uploads/minions-png/dancing-minions-transparent-png-stickpng-18.png',
-    id: '2',
-  },
-  {
-    message: ' I am in USA!',
-    image:
-      'https://www.freepnglogos.com/uploads/minions-png/minions-png-minion-concerned-transparent-png-stickpng-24.png',
-    id: '3',
-  },
-];
+import {state} from './components/Redux/state';
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);
 root.render(
   <React.StrictMode>
     <BrowserRouter>
-      <App {...posstsData} />
+      <App {...state} />
     </BrowserRouter>
   </React.StrictMode>
 );

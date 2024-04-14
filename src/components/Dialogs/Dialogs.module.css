@@ -14,16 +14,27 @@
 }
 
 .dialogs {
-
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
 }
-
+.dialogs img {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    background-color: darkred;
+}
 .messages {
 }
-img {
+.messages img {
     width: 80px;
     border-radius: 20px;
     border: 3px solid yellowgreen;
     padding: 10px;
+    background-color: darkred;
+
 }
 .dialogs a {
     color: red;

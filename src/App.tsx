@@ -7,15 +7,15 @@ import {Route, Routes} from 'react-router-dom';
 import {Dialogs} from './components/Dialogs/Dialogs';
 import {News} from './components/News/News';
 import {Music} from './components/Music/Music';
-import {posts} from './index';
+import {state} from './components/Redux/state';
 
-function App(props: posts[]) {
+function App(props: state) {
   return (
     <div className="wrapper">
       <Header />
       <Navbar />
       <Routes>
-        <Route path="/dialogs" element={<Dialogs />} />
+        <Route path="/dialogs" element={<Dialogs {...props} />} />
         <Route path="/profile" element={<ProfileComponent {...props} />} />
         <Route path="/news" element={<News />} />
         <Route path="/music" element={<Music />} />

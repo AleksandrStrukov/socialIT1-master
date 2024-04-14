@@ -1,11 +1,7 @@
 import React from 'react';
+import {message} from '../Redux/state';
 
-type Message = {
-  message: string;
-  image: string;
-  id: string;
-};
-export const Message = (props: Message) => {
+export const Message = (props: message) => {
   return (
     <div>
       <div>
