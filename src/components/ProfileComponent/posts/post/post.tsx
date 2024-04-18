@@ -1,10 +1,10 @@
 import s from './post.module.css';
-import {state} from '../../../Redux/state';
+import {propsy} from '../../../../App';
 
-export const Post = (props: state) => {
+export const Post = (props: propsy) => {
   return (
     <div>
-      {props.posts.map(post => (
+      {props.state.posts.map(post => (
         <div className={s.item}>
           <img src={post.image} />
           {post.message}

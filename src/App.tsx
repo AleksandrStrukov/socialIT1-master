@@ -8,8 +8,12 @@ import {Dialogs} from './components/Dialogs/Dialogs';
 import {News} from './components/News/News';
 import {Music} from './components/Music/Music';
 import {state} from './components/Redux/state';
+export type propsy = {
+  state: state;
+  addPost: (postMessage: string) => void;
+};
 
-function App(props: state) {
+function App(props: propsy) {
   return (
     <div className="wrapper">
       <Header />

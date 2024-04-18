@@ -1,5 +1,6 @@
 export type state = {
   posts: posts[];
+  newPost: string;
   dialogs: dialogs[];
   messages: message[];
 };
@@ -41,6 +42,7 @@ export let state: state = {
       id: '3',
     },
   ],
+  newPost: 'Itititi',
   dialogs: [
     {
       name: 'Stepan',
@@ -90,4 +92,13 @@ export let state: state = {
       id: '4',
     },
   ],
+};
+
+export const addPost = (postMessage: string) => {
+  let newPost: posts = {
+    id: '4',
+    message: postMessage,
+    image: 'https://www.freepnglogos.com/uploads/minions-png/minions-shoeps-19.png',
+  };
+  state.posts.push(newPost);
 };
